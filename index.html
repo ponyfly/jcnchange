@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!-- saved from url=(0030)http://www.j.cn/xkskt/hersuser -->
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <title>她社区-只有女生的社区</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="./login/login.css">
+  <style>
+    .content-register .text-box .item, .content-register .protocol, .content-login .text-box .item { position: relative;}
+    .content-register .text-box .item .i-status, .content-register .protocol .i-status, .content-login .text-box .item .i-status {position: absolute; top: 8px; right: -35px; width: 24px; height:24px;}
+    .content-register .text-box .item .i-status.right-status, .content-register .protocol .i-status.right-status, .content-login .text-box .item .i-status.right-status {background:url("./login/status-bg.png") no-repeat; background-size: 100% auto;background-position:0 0;}
+    .content-register .text-box .item .i-status.error-status, .content-register .protocol .i-status.error-status, .content-login .text-box .item .i-status.error-status {background:url("./login/status-bg.png") no-repeat; background-size: 100% auto;background-position:0 -24px;}
+    .content-register .text-box .item .error-text, .content-register .protocol .error-text, .content-login .text-box .item .error-text {position:absolute; top: 0px; right: -190px; height: 40px; line-height: 40px; text-align: left;width: 150px; display: none; color: #FF6563;font-size: 12px}
+    .content-register .protocol .i-status { top:13px;right: -177px}
+    .content-register .protocol .error-text { right:-403px; width:220px; height: 50px; line-height: 50px}
+  </style>
+</head>
+<body>
+<div class="content">
+  <div class="t-logo">
+    <img src="./login/icons.png">
+  </div>
+  <div class="nav-bar">
+    <div class="register active">注册</div>
+    <div class="login">登录</div>
+  </div>
+  <div class="clear-default">
+    <input type="text" value="">
+    <input type="password" value="">
+  </div>
+  <div class="content-register">
+    <div class="text-box">
+      <div class="item">
+        <input type="text" value="" id="nick" placeholder="昵称" autocomplete="off">
+        <i class="i-status"></i>
+        <span class="error-text">昵称不能为空</span>
+      </div>
+      <div class="item">
+        <input type="password" value="" id="password" placeholder="密码（不少于6位）" autocomplete="off">
+        <i class="i-status"></i>
+        <span class="error-text">密码不能为空</span>
+      </div>
+      <div class="item">
+        <input type="password" value="" id="confirm-password" placeholder="确认密码" autocomplete="off">
+        <i class="i-status"></i>
+        <span class="error-text">两次密码输入不一致</span>
+      </div>
+      <div class="item">
+        <input type="text" value="" id="telphone" placeholder="注册手机号（仅支持中国大陆）" autocomplete="off">
+        <i class="i-status"></i>
+        <span class="error-text">请输入注册手机号</span>
+      </div>
+      <div class="item">
+        <input type="text" value="" id="name" placeholder="姓名" autocomplete="off">
+        <i class="i-status"></i>
+        <span class="error-text">姓名不能为空</span>
+      </div>
+      <i class="i-status"></i>
+      <div class="item">
+        <input type="text" value="" id="card" placeholder="身份证号" autocomplete="off">
+        <i class="i-status"></i>
+        <span class="error-text">格式有误</span>
+      </div>
+    </div>
+    <div class="protocol">
+      <div class="check"><input type="checkbox" id="check-rule"></div>
+      <div class="words">我已阅读并同意<a href="https://bbs.j.cn/html/uistatic/user-greement.html"
+                                   title="她社区用户协议">《她社区用户协议》</a></div>
+      <i class="i-status"></i>
+      <span class="error-text">请勾选《她社区用户协议》之后才能注册</span>
+    </div>
+    <div class="submit-btn">
+      注册她社区
+    </div>
+  </div>
+  <div class="content-login">
+    <div class="text-box">
+      <div class="item">
+        <input type="text" value="" id="login-nick" placeholder="昵称" autocomplete="off">
+        <i class="i-status"></i>
+        <span class="error-text">请输入昵称</span>
+      </div>
+      <div class="item">
+        <input type="password" value="" id="login-pass" placeholder="密码" autocomplete="off">
+        <i class="i-status"></i>
+        <span class="error-text">请输入密码</span>
+      </div>
+    </div>
+    <div class="login-btn">
+      登录
+    </div>
+  </div>
+</div>
+<script src="./login/2.1.1_jquery.min.js"></script>
+<script src="./login/base.js"></script>
+<script src="./login/hersuser.js"></script>
+
+</body>
+</html>
